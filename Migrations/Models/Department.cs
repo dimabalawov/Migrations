@@ -28,5 +28,7 @@ namespace Migrations.Models
 
         [ForeignKey("FacultyId")]
         public Faculty Faculty { get; set; } = null!;
+
+        public List<Group> Groups { get; set; } = new();
     }
 }

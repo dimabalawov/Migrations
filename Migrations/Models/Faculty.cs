@@ -23,5 +23,7 @@ namespace Migrations.Models
         [Required]
         [StringLength(100)]
         public string Name { get; set; } = null!;
+
+        public List<Department> Departments { get; set; } = new();
     }
 }

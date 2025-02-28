@@ -20,13 +20,15 @@ namespace Migrations.Models
         [Required]
         public int SubjectId { get; set; }
 
-        [Required]
-        public int TeacherId { get; set; }
-
         [ForeignKey("SubjectId")]
         public Subject Subject { get; set; } = null!;
 
+        [Required]
+        public int TeacherId { get; set; }
+
         [ForeignKey("TeacherId")]
         public Teacher Teacher { get; set; } = null!;
+
+        public List<Group> Groups { get; set; } = new();
     }
 }

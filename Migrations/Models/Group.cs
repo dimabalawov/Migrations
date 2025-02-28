@@ -27,5 +27,7 @@ namespace Migrations.Models
 
         [ForeignKey("DepartmentId")]
         public Department Department { get; set; } = null!;
+
+        public List<Lecture> Lectures { get; set; } = new();
     }
 }

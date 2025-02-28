@@ -24,5 +24,7 @@ namespace Migrations.Models
         [Column(TypeName = "money")]
         [Range(0.01, double.MaxValue)]
         public decimal Salary { get; set; }
+
+        public List<Lecture> Lectures { get; set; } = new();
     }
 }
