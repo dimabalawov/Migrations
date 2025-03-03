@@ -26,5 +26,8 @@ namespace Migrations.Models
         public decimal Salary { get; set; }
 
         public List<Lecture> Lectures { get; set; } = new();
+        public Assistant Assistant { get; set; }
+        public Head Head { get; set; }
+        public Dean Dean { get; set; }
     }
 }
